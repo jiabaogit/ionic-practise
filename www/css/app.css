@@ -1,0 +1,153 @@
+/*全局变量*/
+*{margin:0;padding:0}
+body{font-family:Arial,"Microsoft YaHei","宋体",sans-serif;color:#787878;background-color: #fff;font-size:13px;font-weight: normal;
+    position: relative;}
+ul,li{list-style-type:none;}
+body a{color:#787878;text-decoration:none;cursor: pointer;font-size: 14px;}
+body a:hover{color:#00af95;}
+body a:visited{color:#787878;}
+img {border:0;-ms-interpolation-mode: bicubic;vertical-align: middle;}
+button{cursor: pointer;}
+input,button{outline: 0 none;resize:none;-webkit-appearance: none;}
+input,textarea,select,button{outline: none;}
+/*
+ webkit-scrollbar
+---------------------------------------------------*/
+::-webkit-scrollbar {width: 8px;height: 8px;}
+::-webkit-scrollbar-thumb {background-color: #ccc;}
+::-webkit-scrollbar-track {box-shadow: inset 0px 0px 2px rgba(200,200,200,1);}
+::-webkit-scrollbar-track-piece {background-color: #e5e5e5;}
+div,img{-webkit-user-select: none;}
+html{font-size: 50px;line-height: normal;line-height: 1.43;}
+.body{position: relative;width: 100%;max-width: 980px;min-width: 320px;margin: 0 auto;background: #fff;}
+.relative{position: relative;}
+.text-center{text-align: center;}
+.img100 img{width: 100%;}
+.hide{display: none;}
+.pointer{cursor: pointer;}
+.pinkBtn{border-radius: 0.1rem;color: #fff;background: #f8869d;text-align: center;}
+.borderBtn{border: 1px solid #d5d5d6;border-radius: 0.1rem;color: #97989a;text-align: center;}
+
+/*取消点击屏幕时的黑影闪烁*/
+html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+/*轮播图的小圈*/
+.swiper-pagination-bullets .swiper-pagination-bullet{background: #fff;}
+.swiper-pagination-bullets .swiper-pagination-bullet-active{background: #fff;}
+/*导航栏默认背景样式*/
+.title{position: fixed;top: 0;left: 0;right: 0;margin: auto;width: 7.5rem;height: 0.87rem;background: #2b2e33;overflow: hidden;z-index: 3;}
+   /*只有返回键的导航栏*/
+.title .back{float:left;padding: 0.21rem 0.1rem 0.1rem 0.2rem;width: 0.44rem;height: 0.44rem;}
+.title .msg{float: left;width: 6.02rem;height: 0.87rem;line-height: 0.87rem;margin: 0 auto;color: #fbefef;font-size: 0.36rem;}
+.title .msg div{width: 1.98rem;height: 0.62rem;line-height: 0.62rem;margin: 0.12rem auto 0;border: 1px solid #fbefef;border-radius: 0.1rem;color: #fbefef;font-size: 0.32rem;}
+.chotit .back{padding: 0.21rem 1rem 0.1rem 0.2rem;}
+.chotit .msg{width: 4.21rem;}
+.chotit .finshBtn{float: right;width: 1.64rem;line-height: 0.87rem;color: #fbefef;font-size: 0.32rem;}
+/*滚动才出现的导航栏*/
+.senicHead{opacity: 0;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;}
+.senicback{position: fixed;top: 0;left:0;right: 0;margin: auto;width: 7.5rem;height: 0.87rem;overflow: hidden;z-index: 3;}
+.senicback .back{float:left;padding: 0.21rem 0.1rem 0.1rem 0.2rem;width: 0.44rem;height: 0.44rem;}
+/*end 滚动才出现的导航栏*/
+
+/*作品集*/
+.product{margin-bottom: 0.3rem;background: #fff;}
+.product .head{height: 5rem;overflow: hidden;}
+.product .love{position: absolute;width: 0.5rem;height: 0.44rem;padding: 0.37rem 0.39rem;top: 0;right: 0;}
+.product ul li{height: 0.4rem;line-height: 0.4rem;color: #333;}
+.product .name{margin: 0.6rem auto 0.1rem;font-size: 0.34rem;}
+.product .day{margin: 0 auto;font-size: 0.24rem;color: #bebebf;}
+.product .price{margin: 0.3rem auto 0.5rem;font-size: 0.36rem;}
+.product .price .small{font-size: 0.2rem;}
+.product .detail{height: 1.66rem;margin: 0 0.3rem;padding: 0 0.1rem;border-top: 0.01rem solid #e9eaea;}
+.product .detail .phead{float: left;margin: 0.4rem 0.2rem 0 0;width: 0.76rem;height: 0.76rem;border-radius: 50%;overflow: hidden;}
+.product .detail .pname{float: left;margin-top: 0.4rem;width: 3.1rem;overflow: hidden;color:#97989a;}
+.product .pname p{height: 0.38rem;line-height:0.38rem;font-size: 0.26rem;}
+.product .pname .tab{float: left;margin: 0.08rem 0.12rem 0 0;padding: 0 0.09rem;height: 0.28rem;line-height: 0.28rem;font-size: 0.18rem;border: 1px solid #ccc;}
+.product .pname .level{color: #333;}
+.product .bts{float: right;width: 2rem;height: 0.76rem;line-height: 0.76rem;margin-top: 0.4rem;color: #fff;background: #f8869d;border-radius: 0.1rem;font-size: 0.26rem;}
+
+/*日历*/
+.dateLop{padding-top: 1.07rem;background: #fff;font-size: 0.28rem;}
+.dateLop dt{height: 1.20rem;line-height: 1.2rem;padding: 0 0.6rem;}
+.dateLop dt .icon{float: left;width: 0.14rem;height: 1.2rem;margin: 0 0.13rem;}
+.dateLop dt .ndate{float: left;width: 5.4rem;}
+.dateLop .days{padding: 0 0.22rem;height: 0.98rem;line-height: 0.98rem;border-top: 0.01rem solid #e9eaea;border-bottom: 0.01rem solid #e9eaea;color:#bebebf;overflow: hidden;}
+.dateLop .days span{float: left;width: 1rem;}
+.dateLop .tableBox{border-bottom: 0.01rem solid #d5d5d6;}
+.dateLop table{display: block;padding: 0.2rem 0.22rem 0.6rem;}
+.dateLop tr{margin-bottom: 0.01rem;}
+.dateLop td{width: 1rem;height: 0.9rem;line-height: 0.8rem;color: #6a6b6e;}
+.dateLop td div{width: 0.8rem;height: 0.8rem;margin: 0 auto;background: #fff;border: 1px solid #fff;border-radius: 50%;overflow: hidden;}
+.dateLop td .prev{color: #e0e0e0;}
+.dateLop td .today{background: #000;color: #fff;}
+.dateLop td .toNochose{border: 1px solid #e9eaea;}
+.dateLop td .choose{background: #f8869d;color: #fff;}
+.dateLop td .choMid{border: 1px solid #f8869d;}
+.dateLop td .work{border-radius: 0;background: url("../img/work.png") no-repeat 0.1rem bottom/60%;color: #bebebf;border: none;}
+.dateLop td .rest{border-radius: 0;background: url("../img/rest.png") no-repeat 0.1rem bottom/60%;color: #bebebf;border: none;}
+.dateLop .totalBox{background: url("../img/blackBg.jpg");height: 3.4rem;text-align: left;color: #fbefef;font-size: 0.28rem;overflow: hidden;}
+.dateLop .totalBox .total{margin: 0.5rem 0 0 0.6rem;overflow: hidden;height: 0.4rem;}
+.dateLop .total .cicle{float: left;width: 0.1rem;height: 0.1rem;border-radius: 50%;margin: 0.15rem 0.12rem 0 0;background: #fbefef;}
+.dateLop .total .totalDay{float: left;line-height: 0.4rem;}
+
+/*选择地点,切换城市*/
+.locaList{padding: 1.07rem 0.45rem 1.5rem;color: #97989a;}
+.locaList li{height: 1.19rem;line-height: 1.19rem;padding-left: 0.66rem;border-bottom: 0.01rem solid #e9eaea;font-size: 0.28rem;color: #97989a;}
+.locaList .chos{color: #333;}
+/*end 选择地点,切换城市*/
+.wrap-bd {display: inline-block; width: 2rem;height: .64rem;text-align: center;line-height: .64rem; border: 1px solid #fff;border-radius: 5px;}
+
+/*弹出框*/
+.opciaFloor{position: fixed;top: 0;left: 0;width: 100%;height: 100%;opacity: 0.6;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);background: #2b2e33;}
+.confirms{position: fixed;width: 100%;height: 100%;top: 0;left: 0;}
+.frame_btns{position: absolute;width: 6.6rem;left: 50%;top: 50%;margin: -1.4rem 0 0 -3.3rem;overflow: hidden;font-size: 0.26rem;background: #fff;border-radius: 0.1rem;}
+.frame_btns .cont{height: 2.78rem;line-height: 2.78rem;color: #6a6b6e;}
+.frame_btns .frame_btn{float: left;width: 50%;border-top: 1px solid #e9e9e9;height: 0.97rem;line-height: 0.97rem;color: #97989a;}
+
+/*暂无内容*/
+.noContent{position: fixed;height: 100%;width: 100%;z-index: 1;font-size: 0.28rem;color: #e1e1e1;}
+.noContent div{position: absolute;width:7.5rem;height: 0.5rem;line-height: 0.5rem;top: 0.87rem;bottom: 0;margin: auto;}
+/*loading*/
+.simoo_load{position: fixed;width: 100%;height: 90%;margin-top: 0.87rem;top: 0;left: 0;}
+.simoo_load img{position: absolute;width: 1.12rem;height: 0.7rem;top: 50%;left: 50%;margin: 0.08rem 0 0 -0.56rem;}
+/*加载更多*/
+.loadMore img{width: 10%}
+
+/*.view-common-animation,.view-back-animation{*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*top: 0;*/
+    /*left: 0;}*/
+/*.view-common-animation.ng-enter{ -webkit-animation: slideInRight .2s linear;animation: slideInRight .2s linear; z-index: 9999; }
+.view-common-animation.ng-leave{ -webkit-animation: slideOutLeft .2s linear;animation: slideOutLeft .2s linear; z-index: 8888; }
+
+.view-back-animation.ng-enter{ -webkit-animation: slideInLeft .2s linear;animation: slideInLeft .2s linear; z-index: 9999; }
+.view-back-animation.ng-leave{ -webkit-animation: slideOutRight .2s linear;animation: slideOutRight .2s linear; z-index: 8888; }*/
+/*.view-common-animation.ng-enter{-webkit-transition: all 5s linear;*/
+    /*transition: all 5s linear; -webkit-transform:translateX(100%); transform:translateX(100%); z-index: 9999; }*/
+/*.view-common-animation.ng-enter-active{ -webkit-transform: translateX(0); transform: translateX(0); z-index: 8888; }*/
+/*.view-common-animation.ng-leave{-webkit-transition: all 5s linear 0.1ms;*/
+    /*transition: all 5s linear 0.1ms; -webkit-transform: translateX(0); transform: translateX(0); z-index: 9999; }*/
+/*.view-common-animation.ng-leave-active{ -webkit-transform: translateX(-100%); transform: translateX(-100%); z-index: 8888; }*/
+
+/*.view-back-animation.ng-enter{ -webkit-transition: all 5s linear;*/
+    /*transition: all 5s linear; -webkit-transform: translateX(-100%); transform: translateX(-100%); z-index: 9999;}*/
+/*.view-back-animation.ng-enter-active{ -webkit-transform: translateX(0); transform: translateX(0); z-index: 8888;}*/
+/*.view-back-animation.ng-leave{-webkit-transition: all 5s linear 0.1ms;*/
+    /*transition: all 5s linear 0.1ms; -webkit-transform: translateX(0); transform: translateX(0); z-index: 9999; }*/
+/*.view-back-animation.ng-leave-active{ -webkit-transform: translateX(100%); transform: translateX(100%); z-index: 8888; }*/
+
+
+.view-common-animation.ng-enter, .view-common-animation.ng-leave {position: fixed;left:0;top:0;width:100%;}
+.view-common-animation.ng-leave{transition:all 0.2s linear;-webkit-transition:all 0.2s linear;left:0;top:0;width:100%;}
+.view-common-animation.ng-enter {transform:translateX(100%);transition:all 0.2s linear 0.1ms;-webkit-transform:translateX(100%);-webkit-transition:all 0.2s linear 0.1ms;}
+.view-common-animation.ng-leave, .view-common-animation.ng-enter.ng-enter-active {transform:translateX(0%);-webkit-transform:translateX(0%);}
+.view-common-animation.ng-leave.ng-leave-active {transform:translateX(-100%);-webkit-transform:translateX(-100%);}
+
+.view-back-animation.ng-enter, .view-back-animation.ng-leave {position: fixed;left:0;top:0;width:100%;}
+.view-back-animation.ng-leave{transition:all 0.2s linear;-webkit-transition:all 0.2s linear;left:0;top:0;width:100%;}
+.view-back-animation.ng-enter {transform:translateX(-100%);transition:all 0.2s linear 0.1ms;-webkit-transform:translateX(-100%);-webkit-transition:all 0.2s linear 0.1ms;}
+.view-back-animation.ng-leave, .view-back-animation.ng-enter.ng-enter-active {transform:translateX(0);-webkit-transform:translateX(0);}
+.view-back-animation.ng-leave.ng-leave-active {transform:translateX(100%);-webkit-transform:translateX(100%);}
